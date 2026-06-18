@@ -27,6 +27,8 @@ source:
       # Add missing find_package Boost and Protobuf in cmake config file
       - fix-missing-boost-protobuf-find-package.patch
       - fix-cairo-pkgconfig.patch
+      # use Eigen's exported CMake target, required by Eigen >=5
+      - fix-eigen5.patch
 
 build:
   number: 37
