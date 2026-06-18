@@ -29,7 +29,7 @@ source:
       - fix-cairo-pkgconfig.patch
 
 build:
-  number: 36
+  number: 37
 
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
@@ -52,6 +52,7 @@ requirements:
     - ceres-solver
     - libblas
     - eigen
+    - eigen-abi-devel
     - gflags
     - glog
     # temporary workaround till cmake 4.3 is released
